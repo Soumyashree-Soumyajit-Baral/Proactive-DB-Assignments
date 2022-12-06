@@ -1,0 +1,55 @@
+### Creating a Database--
+
+>> create database userstatements;
+
+### To use the database--
+
+>> use userstatements;
+
+
+### Creating table using Primary key--
+
+>> create table users (userid int not null auto_increment, name varchar(55) not null, email varchar(55) not null, primary key (userid));
+
+# int means the datatype of the field is integer(Number).
+# not null means the value of the field can not be null.
+# auto_increment means the value of the field should be automatically increased for next records.
+# varchar(55) means the datatype is string and no. of letter upto 55.
+# primary key (userid) means we are making our userid field as primary key.
+
+### Creating table using Primary key and Foreign key--
+
+>> create table userstmnts (stmntid int not null auto_increment primary key, name varchar(55) not null, age int not null, location varchar(55) not null, noofsubmission int not null default 0, uid int not null, foreign key(userid));
+
+# foreign key(userid) we are adding the userid field of users table which is the primary key as the foreign key in uid field of userstmnts table.
+
+
+Query1: SQL query to dig out the people who filled the survey from same location.
+
+>> select distinct name from userstmnts where location = "Dhenkanal";
+
+# distinct to get the different/unique data.
+# where clause to implement the condition.
+
+
+
+Query2: SQL query to find out the names who filled the survey more than 4 times.
+
+>> select distinct name from userstmnts where noofsubmission > 4;
+
+
+Query3: SQL query to find out the persons who filled the survey and their age is less than 30.
+
+>> select distinct name from userstmnts where noofsubmission > 0 && age < 30;
+
+# && to check 2 conditions.
+
+
+Query4: SQL Query to fetch second record from table?
+
+>> select * from userstmnts where stmntid = 2;
+
+
+Query5: SQL query to find out the survey submission count for every people.
+
+>> select distinct name, noofsubmission from userstmnts;

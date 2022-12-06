@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="form-container">
+
+        <form>
+          <h1>Please fill the Survey Form</h1>
+          <div class="card">
+            <div>
+              <span>User Name :</span><br>
+              <input type="text" placeholder="UserName..." id="username" name="username" ></input>
+            </div>
+            <div>
+              <span>Email :</span><br>
+              <input type="email" placeholder="Email..." id="email" name="email" ></input>
+            </div>
+            <div>
+              <span>Mobile No :</span><br>
+              <input type="number" placeholder="Mobile no..." id="phone" name="phone" ></input>
+            </div>
+            <div>
+              <span>Age :</span><br>
+              <input type="number" placeholder="Age..." id="age" name="age" ></input>
+            </div>
+            <div>
+              <span>Location :</span><br>
+              <input type="text" placeholder="Location..." id="location" name="location" ></input>
+            </div>
+            <div>
+              <span>Experience with ths delivery :</span><br>
+              <input type="text" placeholder="good or bad...." id="deliveryexp" name="deliveryexp" ></input>
+            </div>
+            <div>
+              <span>Did you get product in time?</span><br>
+              <input type="text" placeholder="yes or no..." id="intime" name="intime" ></input>
+            </div>
+            <div>
+              <span>Product condition :</span><br>
+              <input type="text" placeholder="good or bad..." id="productcond" name="productcond" ></input>
+            </div>
+            <div>
+              <span>Quakity of pakaging : :</span><br>
+              <input type="text" placeholder="good or bad..." id="pakagingquality" name="pakagingquality" ></input>
+            </div>
+            <div>
+              <span>Any scratch to the product :</span><br>
+              <input type="text" placeholder="yes or no..." id="isscratch" name="isscratch" ></input>
+            </div>
+            <div>
+              <span>Did it match your expectation?</span><br>
+              <input type="text" placeholder="yes or no..." id="expectation" name="expectation" ></input>
+            </div>
+            <div>
+              <span>Was it differnet from the product images?</span><br>
+              <input type="text" placeholder="yes or no..." id="isdifferent" name="isdifferent" ></input>
+            </div>
+            <div>
+              <span>Quality of Product :</span><br>
+              <input type="text" placeholder="good or bad..." id="productquality" name="productquality" ></input>
+            </div>
+            <div>
+              <span>Did you apply any coopon?</span><br>
+              <input type="text" placeholder="yes or no..." id="iscoopon" name="iscoopon" ></input>
+            </div>
+            <div>
+              <span>Did you get any discount?</span><br>
+              <input type="text" placeholder="yes or no..." id="isdiscount" name="isdiscount" ></input>
+            </div>
+            <div>
+              <span>Do you want to reaturn the produst?</span><br>
+              <input type="text" placeholder="yes or no..." id="isreturn" ></input>
+            </div>
+            <div>
+              <span>Reason for returning :</span><br>
+              <input type="text" placeholder="Reason..." id="reasonofreturn" name="reasonofreturn" ></input>
+            </div>
+            <div>
+              <span>Have you filled this form before?</span><br>
+              <input type="text" placeholder="yes or no..." id="isfilled" name="isfilled" ></input>
+            </div>
+            <div>
+              <span>Times of filling this form :</span><br>
+              <input type="number" placeholder="Times" id="timesoffilling" name="timesoffilling" ></input>
+            </div>
+            <div>
+              <span>Rate us on the scale of 1 to 10 :</span><br>
+              <input type="number" placeholder="1 to 10" id="rating" name="rating" ></input>
+            </div>
+          </div>
+          <div>
+            <button onclick="handleForm()">Submit</button>
+          </div>
+        </form>
+
+      </div>
+      <script src="./index.js"></script>
+</body>
+</html>
