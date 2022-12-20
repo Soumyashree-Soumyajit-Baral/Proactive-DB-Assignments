@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100vw;
   background-color: black;
+  overflow-y: hidden;
 }
 
 span{
@@ -10,15 +11,15 @@ span{
   font-weight: bolder;
 }
 .card{
-  height: 80vh;
-  width: 80vw;
+  height: 50vh;
+  width: 60vw;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   position: absolute;
-  top: 10%;
-  left:18%
+  top: 20%;
+  left:22%
 }
-input{
+.input{
   width: 350px;
   margin-top: 5px;
 }
@@ -28,10 +29,10 @@ h1{
   left: 37%;
   
 }
-button{
+.sbutton{
   position: absolute;
-  top: 93%;
-  left: 46.5%;
+  top: 80%;
+  left: 45.5%;
   height: 30px;
   width: 100px;
   font-weight: bolder;
@@ -39,4 +40,36 @@ button{
   border-radius: 5px;
   cursor: pointer;
 }
+.p{
+  
+  position: absolute;
+  left: 69%;
+  top:3%;
+  cursor: pointer;
+  height: 20px;
+  width: 80px;
+  background-color: red;
+  font-weight: bolder;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border-radius: 5px;
+  
+}
+.link{
+  text-decoration: none;
+  margin: 35px;
+  height: 40px;
+  width: 80px;
+  background-color: aqua;
+  color: black;
+  font-weight: bolder;
+  /* padding: 8px; */
+  padding: 5px 15px;
+  border-radius: 5px;
 
+}
+.links{
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
